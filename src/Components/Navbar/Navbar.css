@@ -1,5 +1,6 @@
-.nav{
+#nav{
     width: 1535px;
+    /* width: 2000px; */
 }
 
 .logo{
@@ -15,8 +16,13 @@
 
 .filter{
     width: 10rem;
+    margin-left: -40rem;
 }
 
 /* #searchbtn{
     margin: 5rem 0rem 0rem 50rem;
 } */
+
+.options{
+    height: fit-content;
+}

@@ -6,8 +6,7 @@ export const fetchAirlineRequest = () =>{
     }
 }
 
-export const fetchAirlineSuccess = (airlines) => {
-    console.log('action robots...',airlines) 
+export const fetchAirlineSuccess = (airlines) => { 
    return{
         type: 'FETCH_AIRLINE_SUCCESS',
         payload: airlines
@@ -20,6 +19,13 @@ export const fetchAirlineFail = (err) =>{
         payload: err
     }
 }
+
+// export const filteredAirline = (country) => {
+//     return {
+//         type: 'FILTEREDAIRLINE',
+//         payload: country
+//     }
+// }
 
 export const fetchAirlines = (url) => {
     return function (dispatch) {
