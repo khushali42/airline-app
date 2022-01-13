@@ -19,6 +19,10 @@ export default function Main() {
       dispatch(fetchAirlines(baseURL))
     }, [])
     
+    useEffect(() => {
+      dispatch(fetchAirlines(baseURL))
+    }, [state])
+    
     const handleFilter = (e) => {
       console.log(e.target.value);
       setState(airlines.airlines.filter((airline) => airline.country === e.target.value))
